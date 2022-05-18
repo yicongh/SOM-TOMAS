@@ -19,7 +19,6 @@
       
       REAL(8) :: kpar(iBINS)
 
-
       INTEGER nsteps                         !               Number of microphysical timesteps
       PARAMETER(nsteps = 10)
       
@@ -124,7 +123,7 @@
             kw_gas(i) = 0.0
          END IF
 
-         kw_gas_off(i) = kw_gas(i) * cstar(i) / wlc(i)*0.00000 !!!!!!!!!!!!!!!!!!!!!!!!!!!
+         kw_gas_off(i) = kw_gas(i) * cstar(i) / wlc(i)
 
       END DO
 

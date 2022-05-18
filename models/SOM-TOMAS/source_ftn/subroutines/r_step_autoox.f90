@@ -42,7 +42,7 @@
 
 !           PRECURSOR REACTED:
             PREC  = SOMGC(INDEX)
-            dPREC = PRECS_kOH(k)*7.34e15/300.*PREC*OH*dt*(0.2/100.)   !!!!!*f_HOMS(k) !!!!!!!!
+            dPREC = PRECS_kOH(k)*7.34e15/300.*PREC*OH*dt*f_HOMS(k) !!!!!!!!
 
 !           DEDUCT FROM PRECURSOR:
             SOMGC(INDEX) = SOMGC(INDEX) - dPREC      
