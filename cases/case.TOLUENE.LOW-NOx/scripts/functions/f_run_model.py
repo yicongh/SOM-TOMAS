@@ -19,8 +19,18 @@ def run_model(ns):
     # RUN THE MODEL:
     # ===============================================================================
     print('MODEL IS RUNNING...')
+
+    # && REMOVE PREVIOUS OUTPUTS:
     os.system('rm ../outputs/* 2>/dev/null')
-    os.system('cd ../ ; ./box.exe')
+
+    # && DEFAULT INPUT AND OUTPUT PATHS:
+    PATHi = './inputs/'
+    PATHo = './outputs/'
+
+    line = PATHi + '\n' + PATHo
+
+    # >> RUN MODEL:
+    os.system('cd ../ ; echo -e "%s" | ./box.exe'%line)
     
     # READ OUTPUT FILES:
     # ===============================================================================

@@ -8,7 +8,7 @@ def write_modules(path,ns):
     
     # WRITE THE HEADER FOR TOMAS ARRAYS:
     # =========================================================================
-    with open('%s/source_ftn/raw_files/raw.mod.tomas.f90'%path,'r') as f1:
+    with open('%s/source.fort/raw_files/raw.mod.tomas.f90'%path,'r') as f1:
         lines = np.array(f1.read().splitlines(),dtype='object')
     
     # WRITE NUMBER OF BINS,
@@ -21,7 +21,7 @@ def write_modules(path,ns):
     
     # WRITE TO MODEL AND
     # DIAGNOSTIC FILES:
-    f1 = open('%s/source_ftn/modules/mod.tomas.f90'%path,'w')
+    f1 = open('%s/source.fort/modules/mod.tomas.f90'%path,'w')
     f2 = open('../outputs/diag.mod.tomas.f90','w')
     
     for line in lines:
@@ -33,7 +33,7 @@ def write_modules(path,ns):
     
     # WRITE THE HEADER FOR SOM ARRAYS:
     # =========================================================================
-    with open('%s/source_ftn/raw_files/raw.mod.som.f90'%path,'r') as f1:
+    with open('%s/source.fort/raw_files/raw.mod.som.f90'%path,'r') as f1:
         lines = np.array(f1.read().splitlines(),dtype='object')
 
     # NUMBER OF GRIDS AND PRECURSORS:
@@ -94,7 +94,7 @@ def write_modules(path,ns):
     # =========================================================================
     # WRITE TO MODEL AND
     # DIAGNOSTIC FILES:
-    f1 = open('%s/source_ftn/modules/mod.som.f90'%path,'w')
+    f1 = open('%s/source.fort/modules/mod.som.f90'%path,'w')
     f2 = open('../outputs/diag.mod.som.f90','w')
     
     for line in lines:

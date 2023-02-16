@@ -13,12 +13,12 @@ FLAGS3 = -fbounds-check -Wall -lstdc++ -g
 
 # PATHS:
 # ============================================================================================
-PATH0 = objects/
-PATH1 = source_ftn/
-PATH2 = source_ftn/subroutines/
-PATH3 = source_ftn/functions/
-PATH4 = source_ftn/modules/
-PATH5 = source_cpp/
+PATH0 = objs/
+PATH1 = source.fort/
+PATH2 = source.fort/subroutines/
+PATH3 = source.fort/functions/
+PATH4 = source.fort/modules/
+PATH5 = source.cpp/
 
 # OBJECT FILES:
 # ============================================================================================
@@ -90,7 +90,7 @@ $(PATH0)gas_het_chem.o : $(PATH5)main/main.cpp makefile
 # ULTILITIES:
 # ============================================================================================
 clean :
-	rm objects/*.o objects/*.mod box.exe
+	rm objs/*.o objs/*.mod box.exe 2>/dev/null
 
 clear :
 	rm outputs/*
