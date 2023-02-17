@@ -1,5 +1,5 @@
 
-./models/SOM-TOMAS/objs/*
+models/SOM-TOMAS/objs/*
 
 .ipynb_checkpoints
 
