@@ -1,5 +1,6 @@
 
 models/SOM-TOMAS/objs/*
+!.hold
 
 .ipynb_checkpoints
 
