@@ -1,6 +1,12 @@
 
 ./models/SOM-TOMAS/objs/*
 
+.ipynb_checkpoints
+
+__pycache__
+
+.ipynb
+
 # Prerequisites
 *.d
 
