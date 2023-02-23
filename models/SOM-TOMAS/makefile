@@ -48,7 +48,6 @@ $(PATH0)r_init_gphase.o     \
 $(PATH0)f_get_len.o         \
 $(PATH0)f_calc_pwl.o        \
 $(PATH0)f_calc_dmdt.o       \
-$(PATH0)f_calc_aedens.o     \
 $(PATH0)f_get_max.o         \
 $(PATH0)f_calc_db.o         \
 $(PATH0)f_calc_kpar.o       \
