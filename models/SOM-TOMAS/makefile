@@ -89,7 +89,7 @@ $(PATH0)gas_het_chem.o : $(PATH5)main/main.cpp makefile
 # ULTILITIES:
 # ============================================================================================
 clean :
-	rm objs/*.o objs/*.mod box.exe 2>/dev/null
+	rm objs/* box.exe 2>/dev/null
 
 clear :
 	rm outputs/*
